@@ -50,3 +50,90 @@ button{cursor:pointer}
 .ns-toast{position:fixed;left:50%;bottom:88px;transform:translateX(-50%) translateY(15px);background:var(--ns-brown);color:#fff;padding:11px 16px;border-radius:999px;z-index:150;font-size:13px;font-weight:850;opacity:0;transition:.2s;pointer-events:none}.ns-toast.show{opacity:1;transform:translateX(-50%)}
 @media(max-width:900px){.ns-hero{grid-template-columns:1fr}.ns-hero-copy{padding:36px 28px}.ns-hero h1{font-size:47px}.ns-hero-photo{min-height:300px}.ns-products{grid-template-columns:repeat(2,1fr)}.ns-info-row{grid-template-columns:repeat(2,1fr)}.ns-checkout-grid{grid-template-columns:1fr}.ns-summary-panel{position:static}}
 @media(max-width:620px){.ns-wrap{padding:0 13px}.ns-header-inner{height:66px}.ns-brand img{height:45px}.ns-nav{display:none}.ns-hero{border-radius:22px}.ns-hero-copy{padding:28px 21px 22px}.ns-hero h1{font-size:39px}.ns-hero-photo{min-height:240px}.ns-quick{grid-template-columns:1fr 1fr}.ns-quick-card{height:145px;font-size:21px}.ns-quick-card:last-child{grid-column:1/-1}.ns-products{gap:9px}.ns-card-body{padding:11px}.ns-card-name{font-size:15px;min-height:36px}.ns-card-desc{display:none}.ns-card-price{font-size:18px}.ns-search-sticky{top:66px}.ns-flavors,.ns-extra-grid{grid-template-columns:1fr}.ns-modal{padding:0;align-items:flex-end}.ns-modal-card{border-radius:24px 24px 0 0;max-height:94vh}.ns-modal-foot{padding:12px 14px}.ns-checkout-grid{padding-top:10px}}
+
+/* Personalización Dulce Mora */
+.ns-hero{
+  background:
+    radial-gradient(circle at 15% 15%,rgba(255,255,255,.38),transparent 30%),
+    linear-gradient(135deg,#F7AEC6 0%,#F59DBA 46%,#A8DCE7 100%);
+}
+.ns-hero h1 span{color:#fff;text-shadow:0 2px 0 rgba(68,40,50,.08)}
+.ns-btn.whatsapp{background:#25D366;color:white}
+.ns-mora-hero{
+  position:relative;
+  overflow:hidden;
+  background:
+    radial-gradient(circle at 75% 15%,rgba(255,255,255,.55),transparent 24%),
+    linear-gradient(160deg,rgba(255,255,255,.12),rgba(255,255,255,0));
+}
+.ns-mora-bubble{
+  position:absolute;
+  right:6%;
+  top:7%;
+  width:47%;
+  aspect-ratio:1/1.05;
+  border-radius:32px;
+  overflow:hidden;
+  filter:drop-shadow(0 18px 25px rgba(68,40,50,.18));
+  z-index:2;
+}
+.ns-mora-bubble img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:cover!important;
+  object-position:50% 22%!important;
+  transform:scale(1.35);
+}
+.ns-hero-icecream{
+  position:absolute;
+  left:4%;
+  bottom:-6%;
+  width:66%;
+  height:55%;
+  z-index:1;
+  filter:drop-shadow(0 16px 20px rgba(68,40,50,.16));
+}
+.ns-hero-icecream img{
+  width:100%!important;
+  height:100%!important;
+  object-fit:contain!important;
+}
+.ns-hero-pills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+  margin-top:18px;
+}
+.ns-hero-pills span{
+  background:rgba(255,255,255,.88);
+  border:1px solid rgba(255,255,255,.9);
+  padding:9px 11px;
+  border-radius:999px;
+  font-size:12px;
+  font-weight:850;
+  box-shadow:0 6px 16px rgba(68,40,50,.08);
+}
+.ns-brand{
+  display:flex!important;
+  align-items:center;
+  gap:8px;
+}
+@media(max-width:620px){
+  .ns-mora-bubble{
+    width:52%;
+    right:2%;
+    top:2%;
+  }
+  .ns-hero-icecream{
+    width:70%;
+    left:-4%;
+    bottom:-8%;
+  }
+  .ns-hero-pills{
+    gap:6px;
+  }
+  .ns-hero-pills span{
+    font-size:10px;
+    padding:7px 9px;
+  }
+}
